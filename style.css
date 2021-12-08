@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #e7e7e7
+    ;
+    
+}
+
+#header{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.text-primary{
+    color: rgb(54, 54, 170);
+}
+#alert{
+    height: 4vh;
+    margin: 1rem 4rem ;
+}
+#add,#remove{
+    background-color: rgb(175, 248, 175);
+    border: 2px solid rgb(12, 160, 12);
+    padding: 0.5rem;
+    transition: display 2s linear;
+    display: none;
+}
+
+#input-info{
+    margin: 1rem 4rem ;
+}
+.input{
+    width: 100%;
+    margin: 0.4rem 0;
+    padding: 0.3rem;
+    
+}
+
+#submit{
+    width: 100%;
+    border-radius: 1rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin: 0.4rem 0;
+    letter-spacing: 0.3rem;
+
+}
+#submit:hover{
+    background-image: linear-gradient(120deg,rgb(22, 22, 224),rgb(15, 190, 190));
+    color: white;
+}
+
+#book-list-container{
+    margin: 1rem 4rem ;
+}
+
+#book-list-container header{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+    
+}
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    padding: 1rem;
+
+}
+
+.heading{
+    background-color: #aaa;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+.btn{
+    border: none;
+    color: rgb(252, 25, 25);
+    background-color: inherit;
+   
+}
+.btn i{
+    pointer-events: none;
+}
+.grid:nth-child(odd)
+{
+    background-color: #aaa;
+}
+.grid:nth-child(even)
+{
+    background-color: white;
+}
