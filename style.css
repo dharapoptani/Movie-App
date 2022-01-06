@@ -10,7 +10,7 @@ body{
     background-color:#22254b ;
 }
 header{
-    height: 10vh;
+    min-height: 10vh;
     background-color:#373b69;
     color: #ddd; 
     display: flex;
@@ -31,6 +31,8 @@ header input:focus{
     color: #22254b;
 
 }
+
+
 main{
     display: flex;
     justify-content: space-around;
@@ -53,8 +55,9 @@ main{
 
 .container img{
     width: 100%;
+    height: 300px;
 
-    object-fit: contain;
+    object-fit: cover;
 }
 .movie-info{
     width: 100%;
@@ -88,7 +91,22 @@ main{
 .overview h2{
     margin-bottom: 1rem;
 }
+.overview::-webkit-scrollbar{
+    display: none;
+}
 
 .container:hover .overview{
     transform: translateY(0);
+}
+@media  screen and (max-width:500px) {
+
+    header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    
+}
+    
 }
